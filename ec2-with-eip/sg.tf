@@ -20,5 +20,13 @@ resource "aws_security_group" "sg" {
  tags = {
     Name = "${var.project_name}-${var.environment}"
   }
+
+  lifecycle {
+
+    create_before_destroy = true
+
+  }
+
+
 }
 
