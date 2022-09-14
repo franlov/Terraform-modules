@@ -10,9 +10,9 @@ resource "aws_instance" "web" {
 }
 
 module "keypair" { 
-  source = "github.com/franlov/Terraform-modules/tree/main/keypair"
+  source = "github.com/franlov/Terraform-module-keypair"
   project_name = "${var.project_name}"
   environment = "${var.environment}"
   key_name = "${var.project_name}-${var.environment}"
-
+  key_public = "${var.key_public}"
 }
