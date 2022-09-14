@@ -1,2 +1,3 @@
-# Terraform-modules
-Modulo EC2 con creacion de instancia ubuntu,SG,EIP,Keypar en modulo externo
+# KeyPar - Terraform Module 
+
+> * Modulo que se llama desde el modulo ec2-with-eip para no contener la key SSH-RSA
